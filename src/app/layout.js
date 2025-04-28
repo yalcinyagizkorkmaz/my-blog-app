@@ -1,6 +1,7 @@
 
 import "./globals.css";
 import Navigation from "./components/navigation";
+import { Container } from "@mui/material";
 
 
 export const metadata = {
@@ -16,11 +17,9 @@ export default function RootLayout({ children }) {
            <Navigation />
        </header>
        <main>
-        {children}
+        <Container sx={{my:3}}>{children}</Container>
        </main>
-       <footer>
-           Footer
-       </footer>
+      
       </body>
     </html>
   );
